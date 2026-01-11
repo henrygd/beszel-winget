@@ -6,21 +6,21 @@ InstallerLocale: en-US
 InstallerType: zip
 ReleaseDate: "2026-01-11"
 Installers:
-  - Architecture: arm64
-    NestedInstallerType: portable
-    NestedInstallerFiles:
-      - RelativeFilePath: beszel-agent.exe
-        PortableCommandAlias: beszel-agent
-    InstallerUrl: https://github.com/henrygd/beszel/releases/download/v0.18.0/beszel-agent_windows_arm64.zip
-    InstallerSha256: 26101bd59ddf813e42004e12e25bdbf42eecf0d29a2eb1357eb435045bb3a7f1
-    UpgradeBehavior: uninstallPrevious
   - Architecture: x64
     NestedInstallerType: portable
     NestedInstallerFiles:
       - RelativeFilePath: beszel-agent.exe
         PortableCommandAlias: beszel-agent
     InstallerUrl: https://github.com/henrygd/beszel/releases/download/v0.18.0/beszel-agent_windows_amd64.zip
-    InstallerSha256: 8c906b36b953197ca5448a87966c2cf33e29dea84869d0257c35454b66ded271
+    InstallerSha256: aa20607d59e865fa6358b0daac23c5b45142f55aab7ef41abbed435cc88bdbb4
+    UpgradeBehavior: uninstallPrevious
+  - Architecture: arm64
+    NestedInstallerType: portable
+    NestedInstallerFiles:
+      - RelativeFilePath: beszel-agent.exe
+        PortableCommandAlias: beszel-agent
+    InstallerUrl: https://github.com/henrygd/beszel/releases/download/v0.18.0/beszel-agent_windows_arm64.zip
+    InstallerSha256: 28406a1be405643c0892932f438b87985d98ba5c0c3d5b388a9e513197884434
     UpgradeBehavior: uninstallPrevious
 ManifestType: installer
 ManifestVersion: 1.10.0
